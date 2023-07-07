@@ -7,18 +7,18 @@ class Classroom {
         this.studentsArray.push(student);
     }
 
-    getSquads() {
+    getSquads(squadMembers) {
         let acc = '';
 
         for (let i = 0; i < this.studentsArray.length; i++) {
             const student = this.studentsArray[i];
 
-            if (i % 2 === 0) {
-                acc += 'Coppia ' + (i / 2 + 1) + ': ';
+            if (i % squadMembers === 0) {
+                acc += 'Squadra ' + (i / squadMembers + 1) + ': ';
             }
             acc += student.toString();
 
-            if (i % 2 !== 0) {
+            if (i % squadMembers === squadMembers - 1) {
                 acc += '\n';
             } else {
                 acc += ' e ';
