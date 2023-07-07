@@ -9,6 +9,14 @@ const student8 = new Student('Francesca', 'Ercolani');
 const student9 = new Student('Luca', 'Verduci');
 const student10 = new Student('Ares', 'Fiumicelli');
 
-console.log(student1.toString());
-
 const class1 = new Classroom([student1, student2, student3, student4, student5, student6, student7, student8, student9, student10]);
+
+console.log(document);
+console.log(document.getElementById('main-container'));
+
+const mainContainer = document.getElementById('main-container');
+const h2Element = document.createElement('h2');
+const textNode = document.createTextNode(student1.toString());
+
+h2Element.appendChild(textNode);
+mainContainer.appendChild(h2Element);
