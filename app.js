@@ -1,19 +1,16 @@
-const student1 = new Student('Cesare', 'Falzone', 'Front-End');
-const student2 = new Student('Manuela', 'Ariotti', 'Front-End');
-const student3 = new Student('Damiano', 'Di Lionardo', 'Front-End');
-const student4 = new Student('Isabella', 'Ottonello', 'Front-End');
-const student5 = new Student('Stefano', 'Florio', 'Front-End');
-const student6 = new Student('Bryan', 'Rojas', 'Front-End');
-const student7 = new Student('Stefania', 'Ghergut', 'Front-End');
-const student8 = new Student('Francesca', 'Ercolani', 'Front-End');
-const student9 = new Student('Luca', 'Verduci', 'Front-End');
-const student10 = new Student('Ares', 'Fiumicelli', 'Front-End');
+const student1 = new Student('Cesare', 'Falzone');
+const student2 = new Student('Manuela', 'Ariotti');
+const student3 = new Student('Damiano', 'Di Lionardo');
+const student4 = new Student('Isabella', 'Ottonello');
+const student5 = new Student('Stefano', 'Florio');
+const student6 = new Student('Bryan', 'Rojas');
+const student7 = new Student('Stefania', 'Ghergut');
+const student8 = new Student('Francesca', 'Ercolani');
+const student9 = new Student('Luca', 'Verduci');
+const student10 = new Student('Ares', 'Fiumicelli');
 
-const studentsArray = [student1, student2, student3, student4, student5, student6, student7, student8, student9, student10];
+console.log(student1.toString());
 
-console.log(studentsArray);
-console.log(studentsArray.toString());
+const class1 = new Classroom([student1, student2, student3, student4, student5, student6, student7, student8, student9, student10]);
 
-const random = Math.floor(Math.random() * studentsArray.length) + Math.floor(Math.random() * studentsArray.length);
-console.log(random, studentsArray[random]);
-console.log(studentsArray.randomizer);
+console.log(class1.getSquads())

@@ -1,12 +1,11 @@
 class Student {
-    constructor(name, surname, classroom) {
+    constructor(name, surname) {
         this.name = name;
         this.surname = surname;
-        this.classroom = classroom
     }
 
     toString() {
-        return 'Nome: ' + this.name + '\n' + 'Cognome: ' + this.surname + '\n' + 'Classe: ' + this.classroom + '\n';
+        return 'Nome: ' + this.name + '\n' + 'Cognome: ' + this.surname + '\n';
     }
 
     get randomizer() {
