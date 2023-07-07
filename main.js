@@ -24,6 +24,8 @@ const class1 = new Classroom([student1, student2, student3, student4, student5, 
 function renderPage() {
     const mainContainer = document.getElementById('main-container');
 
+    mainContainer.innerHTML = '';
+
     for (let i = 0; i < class1.studentsArray.length; i++) {
         if (i % 2 === 0) {
             const h3Element = document.createElement('h3');
@@ -34,6 +36,9 @@ function renderPage() {
         }
         const student = class1.studentsArray[i];
         const pElement = document.createElement('p');
+
+        pElement.classList.add('student-p');
+
         const textNode = document.createTextNode(student.toString());
 
         pElement.appendChild(textNode);
@@ -41,3 +46,11 @@ function renderPage() {
     }
 }
 renderPage();
+
+function shuffle() {
+    console.log('Sto rimescolando');
+
+    class1.shuffleStudents();
+    
+    renderPage();
+}
