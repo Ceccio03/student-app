@@ -47,3 +47,5 @@ renderPage();
 // 5) metto lo span del nome dentro al div
 // 6) creo lo span del cognome
 // ...
+
+// cap 13 e 14 eloquent javascript
