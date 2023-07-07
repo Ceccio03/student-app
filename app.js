@@ -13,4 +13,6 @@ console.log(student1.toString());
 
 const class1 = new Classroom([student1, student2, student3, student4, student5, student6, student7, student8, student9, student10]);
 
+class1.shuffleStudents();
+
 console.log(class1.getSquads())

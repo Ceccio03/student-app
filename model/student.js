@@ -5,7 +5,7 @@ class Student {
     }
 
     toString() {
-        return 'Nome: ' + this.name + '\n' + 'Cognome: ' + this.surname + '\n';
+        return this.name + ' ' + this.surname;
     }
 
     get randomizer() {
@@ -18,6 +18,4 @@ class Student {
         }
         return twistStudent;
     }
-// }Math.floor(Math.random() * studentsArray[i]);
-//             twistStudent.push(studentsArray[i]);
 }

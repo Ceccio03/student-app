@@ -14,10 +14,15 @@ class Classroom {
             const student = this.studentsArray[i];
 
             if (i % 2 === 0) {
-                acc += 'Coppia ' + (i / 2 + 1) + ':\n';
+                acc += 'Coppia ' + (i / 2 + 1) + ': ';
             }
-
             acc += student.toString();
+
+            if (i % 2 !== 0) {
+                acc += '\n';
+            } else {
+                acc += ' e ';
+            }
         }
         return acc;
     }
@@ -28,6 +33,11 @@ class Classroom {
 
         for (let i = 0; i < originalLength; i++) {
             const randomIndex = Math.floor(Math.random() * this.studentsArray.length);
+            const student = this.studentsArray[randomIndex];
+
+            tempArray.push(student);
+            this.studentsArray.splice(randomIndex, 1);
         }
+        this.studentsArray = tempArray;
     }
 }
