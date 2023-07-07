@@ -1,3 +1,12 @@
 .student-p{
     border: 1px solid lightcoral;
+    padding: 24px;
+    text-align: center;
+    background-color: green;
+}
+
+#main-container{
+    /* display: flex;
+    flex: 2; */
+    background-color: yellow;
 }

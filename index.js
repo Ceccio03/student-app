@@ -11,19 +11,9 @@ const student10 = new Student('Ares', 'Fiumicelli', 1993, 'Aresso');
 
 const class1 = new Classroom([student1, student2, student3, student4, student5, student6, student7, student8, student9, student10]);
 
-// console.log(document);
-// console.log(document.getElementById('main-container'));
-
-// const mainContainer = document.getElementById('main-container');
-// const h2Element = document.createElement('h2');
-// const textNode = document.createTextNode(student1.toString());
-
-// h2Element.appendChild(textNode);
-// mainContainer.appendChild(h2Element);
-
 function renderPage() {
     const mainContainer = document.getElementById('main-container');
-
+    
     mainContainer.innerHTML = '';
 
     for (let i = 0; i < class1.studentsArray.length; i++) {
@@ -33,7 +23,9 @@ function renderPage() {
 
             h3Element.appendChild(node);
             mainContainer.appendChild(h3Element);
+            
         }
+        
         const student = class1.studentsArray[i];
         const pElement = document.createElement('p');
 
@@ -47,10 +39,11 @@ function renderPage() {
 }
 renderPage();
 
-function shuffle() {
-    console.log('Sto rimescolando');
-
-    class1.shuffleStudents();
-    
-    renderPage();
-}
+// for
+// 1) creo un div per la card
+// 2) creo lo span del nome
+// 3) creo il node del nome
+// 4) metto il node del nome dentro lo span del nome
+// 5) metto lo span del nome dentro al div
+// 6) creo lo span del cognome
+// ...
